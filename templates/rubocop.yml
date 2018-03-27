@@ -4,7 +4,7 @@ AllCops:
   Exclude:
     - 'spec/dummy/**/*'
     - 'vendor/bundle/**/*'
-  TargetRubyVersion: 2.1
+  TargetRubyVersion: 2.4
 
 # Sometimes I believe this reads better
 # This also causes spacing issues on multi-line fixes
@@ -159,6 +159,10 @@ Lint/HandleExceptions:
 
 Metrics/AbcSize:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - '*.gemspec'
 
 Metrics/BlockNesting:
   Enabled: false
