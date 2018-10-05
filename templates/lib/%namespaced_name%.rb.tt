@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
 require 'solidus_core'
-require '<%=file_name%>/engine'
+require '<%=name%>/engine'

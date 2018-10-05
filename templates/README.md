@@ -1,22 +1,21 @@
-<%= class_name %>
-<%= "=" * class_name.size %>
+# <%= camelized_modules %>
 
 Introduction goes here.
 
 Installation
 ------------
 
-Add <%= file_name %> to your Gemfile:
+Add <%= name %> to your Gemfile:
 
 ```ruby
-gem '<%= file_name %>'
+gem '<%= name %>'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g <%= file_name %>:install
+bundle exec rails g <%= name %>:install
 ```
 
 Testing
@@ -33,7 +32,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require '<%= file_name %>/factories'
+require '<%= name %>/factories'
 ```
 
 Copyright (c) <%= Time.now.year %> [name of extension creator], released under the New BSD License

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-module <%= class_name %>
+<%= wrap_in_modules <<-rb.strip_heredoc
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name '<%= file_name %>'
+    engine_name '<%= name %>'
 
     # use rspec for tests
     config.generators do |g|
@@ -19,4 +19,5 @@ module <%= class_name %>
 
     config.to_prepare(&method(:activate).to_proc)
   end
-end
+rb
+%>
