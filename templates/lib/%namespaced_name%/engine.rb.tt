@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-<%= wrap_in_modules <<-rb.strip_heredoc
+module <%= camelized_modules %>
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
@@ -19,5 +19,4 @@
 
     config.to_prepare(&method(:activate).to_proc)
   end
-rb
-%>
+end
