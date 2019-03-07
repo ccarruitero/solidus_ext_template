@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = <%= camelized_modules %>::VERSION
   s.summary     = 'TODO'
   s.description = 'TODO'
-  s.license     = 'BSD-3-Clause'
+  s.license     = 'MIT'
 
   s.author      = 'César Carruitero'
   s.email       = 'ccarruitero@protonmail.com'
